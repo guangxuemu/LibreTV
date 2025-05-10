@@ -21,73 +21,44 @@ const SITE_CONFIG = {
 
 // API站点配置
 const API_SITES = {
-    ruyi: {
-        api: 'https://cj.rycjapi.com',
-        name: '如意资源',
-    },
     dyttzy: {
         api: 'http://caiji.dyttzyapi.com',
         name: '电影天堂资源',
         detail: 'http://caiji.dyttzyapi.com',
     },
-    hwba: {
-        api: 'https://cjhwba.com',
-        name: '华为吧资源',
-    },
-    ffzy: {
-        api: 'http://api.ffzyapi.com',
-        name: '非凡影视',
-        detail: 'http://api.ffzyapi.com',
-    },
-    lzzy: {
-        api: 'https://cj.lziapi.com',
-        name: '量子资源',
+    ruyi: {
+        api: 'https://cj.rycjapi.com',
+        name: '如意资源',
     },
     bfzy: {
         api: 'https://bfzyapi.com',
         name: '暴风资源',
     },
-    qiqikp: {
-        api: 'https://www.77kkpp.com',
-        name: '七七看片',
+    tyyszy: {
+        api: 'https://tyyszy.com',
+        name: '天涯资源',
+    },
+    ffzy: {
+        api: 'http://ffzy5.tv',
+        name: '非凡影视',
+        detail: 'http://ffzy5.tv',
     },
     heimuer: {
         api: 'https://json.heimuer.xyz',
         name: '黑木耳',
         detail: 'https://heimuer.tv',
     },
-    mdzy: {
-        api: 'https://www.mdzyapi.com',
-        name: '魔都资源',
-        detail: 'https://www.mdzyapi.com',
-    },
-    mozhua: {
-        api: 'https://mozhuazy.com',
-        name: '魔爪资源',
-    },
-    wolong: {
-        api: 'https://collect.wolongzy.cc',
-        name: '卧龙资源',
-    },
-    tyyszy: {
-        api: 'https://tyyszyapi.com',
-        name: '天涯资源',
-    },
-    ikunzy: {
-        api: 'https://ikunzyapi.com',
-        name: 'iKun资源',
-    },
     zy360: {
         api: 'https://360zy.com',
         name: '360资源',
     },
-    wujin: {
-        api: 'https://api.wujinapi.me',
-        name: '无尽资源',
+    wolong: {
+        api: 'https://wolongzyw.com',
+        name: '卧龙资源',
     },
-    zuida: {
-        api: 'https://api.zuidapi.com',
-        name: '最大资源',
+    hwba: {
+        api: 'https://cjhwba.com',
+        name: '华为吧资源',
     },
     jisu: {
         api: 'https://jszyapi.com',
@@ -95,62 +66,88 @@ const API_SITES = {
         detail: 'https://jszyapi.com'
     },
     dbzy: {
-        api: 'https://caiji.dbzy5.com',
+        api: 'https://dbzy.com',
         name: '豆瓣资源',
+    },
+    huya: {
+        api: 'https://www.huyaapi.com',
+        name: '虎牙资源',
+        detail: 'https://www.huyaapi.com',
+    },
+    mozhua: {
+        api: 'https://mozhuazy.com',
+        name: '魔爪资源',
+    },
+    mdzy: {
+        api: 'https://www.mdzyapi.com',
+        name: '魔都资源',
+    },
+    zuid: {
+        api: 'https://api.zuidapi.com',
+        name: '最大资源'
     },
     yinghua: {
         api: 'https://m3u8.apiyhzy.com',
         name: '樱花资源'
     },
-
-    
-
-    yutuzy: {
-        api: 'https://yutuzy10.com',
-        name: '玉兔资源',
-        adult: true
-    },	
-    ckzy: {
-        api: 'https://www.ckzy1.com',
-        name: 'CK资源',
-        adult: true
+    baidu: {
+        api: 'https://api.apibdzy.com',
+        name: '百度云资源'
     },
-    jkun: {
-        api: 'https://jkunzyapi.com',
-        name: 'jkun资源',
-        adult: true
+    wujin: {
+        api: 'https://api.wujinapi.me',
+        name: '无尽资源'
     },
-    bwzy: {
-        api: 'https://api.bwzym3u8.com',
-        name: '百万资源',
-        adult: true
+    wwzy: {
+        api: 'https://wwzy.tv',
+        name: '旺旺短剧'
     },
-    souav: {
-        api: 'https://api.souavzy.vip',
-        name: 'souav资源',
-        adult: true
+    ikun: {
+        api: 'https://ikunzyapi.com',
+        name: 'iKun资源'
     },
-    r155: {
-        api: 'https://155api.com',
-        name: '155资源',
-        adult: true
-    },
-    lsb: {
-        api: 'https://apilsbzy1.com',
-        name: 'lsb资源',
-        adult: true
-    },
-    huangcang: {
-        api: 'https://hsckzy.vip',
-        name: '黄色仓库',
-        adult: true,
-        detail: 'https://hsckzy.vip' // 添加detail URL以便特殊处理
-    },
-    siwa: {
-        api: 'https://siwazyw.tv',
-        name: '丝袜资源',
-        adult: true
-    }
+    // 下面是一些成人内容的API源，默认隐藏，使用本项目浏览黄色内容违背项目初衷
+    // ckzy: {
+    //     api: 'https://www.ckzy1.com',
+    //     name: 'CK资源',
+    //     adult: true
+    // },
+    // jkun: {
+    //     api: 'https://jkunzyapi.com',
+    //     name: 'jkun资源',
+    //     adult: true
+    // },
+    // bwzy: {
+    //     api: 'https://api.bwzym3u8.com',
+    //     name: '百万资源',
+    //     adult: true
+    // },
+    // souav: {
+    //     api: 'https://api.souavzy.vip',
+    //     name: 'souav资源',
+    //     adult: true
+    // },
+    // r155: {
+    //     api: 'https://155api.com',
+    //     name: '155资源',
+    //     adult: true
+    // },
+    // lsb: {
+    //     api: 'https://apilsbzy1.com',
+    //     name: 'lsb资源',
+    //     adult: true
+    // },
+    // huangcang: {
+    //     api: 'https://hsckzy.vip',
+    //     name: '黄色仓库',
+    //     adult: true,
+    //     detail: 'https://hsckzy.vip'
+    // },
+    // yutu: {
+    //     api: 'https://yutuzy10.com',
+    //     name: '玉兔资源',
+    //     adult: true
+    // },
 };
 
 // 添加聚合搜索的配置选项
