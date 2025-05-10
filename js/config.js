@@ -93,6 +93,10 @@ const API_SITES = {
         api: 'https://caiji.dbzy5.com',
         name: '豆瓣资源',
     },
+    jyzy: {
+        api: 'https://jyzyapi.com',
+        name: '金鹰资源',
+    },
     jisu: {
         api: 'https://jszyapi.com',
         name: '极速资源',
