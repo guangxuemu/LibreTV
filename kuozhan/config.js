@@ -25,6 +25,15 @@ const API_SITES = {
         api: 'https://cj.rycjapi.com',
         name: '如意资源',
     },
+    dyttzy: {
+        api: 'http://caiji.dyttzyapi.com',
+        name: '电影天堂资源',
+        detail: 'http://caiji.dyttzyapi.com',
+    },
+    hwba: {
+        api: 'https://cjhwba.com',
+        name: '华为吧资源',
+    },
     ffzy: {
         api: 'http://api.ffzyapi.com',
         name: '非凡影视',
@@ -142,7 +151,6 @@ const API_SITES = {
         name: '丝袜资源',
         adult: true
     }
-    // 您可以按需添加更多源
 };
 
 // 添加聚合搜索的配置选项
