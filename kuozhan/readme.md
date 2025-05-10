@@ -1,3 +1,27 @@
+app.js  //if (!api.adult) return; // 仅添加成人内容API
+
+
+        /* 新增：隐藏DPlayer菜单 */
+        .dplayer-menu.dplayer-menu-show {
+            display: none !important;
+        }
+
+            /* 新增移动端响应式布局 */
+        @media (max-width: 768px) {
+            /* 调整播放器高度 */
+            #player {
+                height: 40vh;
+            }
+        }
+            /* 超小屏幕设备优化 */
+        @media (max-width: 480px) {
+            #player {
+                height: 30vh;
+            }
+        }
+
+
+
 config.js  第三方跨域https://seep.eu.org/   https://cors.zme.ink/  https://api.allorigins.win/raw?url=
 app.js  //if (!api.adult) return; // 仅添加成人内容API
 player.html   增加mobile-touch-control.js  实现长按加速
