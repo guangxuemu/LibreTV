@@ -4,7 +4,7 @@ document.addEventListener('DOMContentLoaded', function() {
     // 检查用户是否已经看过声明
     //const hasSeenDisclaimer = localStorage.getItem('hasSeenDisclaimer');
     const hasSeenDisclaimer = true;
-    
+
     if (!hasSeenDisclaimer) {
         // 显示弹窗
         const disclaimerModal = document.getElementById('disclaimerModal');
