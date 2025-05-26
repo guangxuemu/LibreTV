@@ -130,7 +130,7 @@ function addAdultAPI() {
         // 创建成人API源的复选框
         Object.keys(API_SITES).forEach(apiKey => {
             const api = API_SITES[apiKey];
-            //if (!api.adult) return; // 仅添加成人内容API
+            if (!api.adult) return; // 仅添加成人内容API
             
             const checked = selectedAPIs.includes(apiKey);
             
